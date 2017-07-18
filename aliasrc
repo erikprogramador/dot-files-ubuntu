@@ -1,0 +1,46 @@
+# Git
+alias gs="git status"
+alias gl="git log"
+alias gc="git commit -m"
+alias ga="git add"
+alias gaa="git add ."
+alias gp="git push"
+alias gpo="git push origin"
+alias gplo="git pull origin"
+alias gpl="git pull"
+alias gck="git checkout"
+alias nah="git clean -df; git checkout -- ."
+
+# Artisan
+alias art="php artisan"
+alias phpa="php artisan serve"
+alias tinker="php artisan tinker"
+alias migrate="php artisan migrate"
+alias tinker="php artisan tinker"
+alias dusk="php artisan dusk"
+
+# Test
+alias t="vendor/bin/phpunit"
+alias tf="vendor/bin/phpunit --filter"
+
+# Editor
+alias s="subl ."
+alias a="atom ."
+
+# Homestead
+function homestead() {
+    ( cd ~/Homestead && vagrant $* )
+}
+alias homestead=homestead
+
+function phpdev() {
+    ( cd ~/php7dev && vagrant $* )
+}
+alias phpdev=phpdev
+
+# System
+alias ll="ls -la"
+
+# Helpers
+alias serve="php -S localhost:8080 -t"
+alias connect="mysql -uroot -perik"
