@@ -46,3 +46,5 @@ alias pip=pip3
 # Helpers
 alias serve="php -S localhost:8080 -t"
 alias connect="mysql -uroot -perik"
+alias laradock-up="~/scripts/laradock yes"
+alias laradock-down="~/scripts/laradock"
