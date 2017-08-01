@@ -1,6 +1,6 @@
 # Git
 alias gs="git status"
-alias gl="git log"
+alias gl="git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit"
 alias gc="git commit -m"
 alias ga="git add"
 alias gaa="git add ."
@@ -48,3 +48,4 @@ alias serve="php -S localhost:8080 -t"
 alias connect="mysql -uroot -perik"
 alias laradock-up="~/scripts/laradock yes"
 alias laradock-down="~/scripts/laradock"
+alias dump="composer dump -o"
